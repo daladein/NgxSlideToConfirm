@@ -1,12 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'lib-SlideToConfirm',
-  template: `
-    <p>
-      slide-to-confirm works!
-    </p>
-  `,
+  selector: 'ngx-slide-to-confirm',
+  templateUrl:  './slide-to-confirm.component.html',
   styles: []
 })
 export class SlideToConfirmComponent implements OnInit {

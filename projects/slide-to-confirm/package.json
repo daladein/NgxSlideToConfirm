@@ -1,8 +1,16 @@
 {
-  "name": "slide-to-confirm",
+  "name": "ngx-slide-to-confirm",
   "version": "0.0.1",
+  "homepage": "https://github.com/rinturaj/NgxSlideToConfirm",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rinturaj/NgxSlideToConfirm"
+  },
   "peerDependencies": {
     "@angular/common": "^8.2.14",
     "@angular/core": "^8.2.14"
+  },
+  "dependencies": {
+    "@angular/cdk": "^13.2.0"
   }
 }
