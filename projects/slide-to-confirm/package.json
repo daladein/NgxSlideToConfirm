@@ -1,6 +1,6 @@
 {
   "name": "ngx-slide-to-confirm",
-  "version": "0.0.1",
+  "version": "1.0.2",
   "homepage": "https://github.com/rinturaj/NgxSlideToConfirm",
   "repository": {
     "type": "git",
@@ -12,6 +12,13 @@
     "@angular/cdk": "^13.2.0",
     "tslib": "^2.0.0"
   },
+  "author": {
+    "name": "Rinturaj",
+    "email": "rinturajc@gmail.com",
+    "url": "https://github.com/rinturaj",
+    "avatar": "https://s.gravatar.com/avatar/67565328cfa1d6414073d26cfbc72c59?s=80"
+  },
+  "license": "MIT",
   "private": false,
   "keywords": ["slide-to-confirm", "angular",
     "slide-to-confirm",
