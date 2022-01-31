@@ -1,12 +1,44 @@
 # SlideToConfirm
 
-This library was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.2.14.
+Slide to confirm a good alternative to confirmation box.A customizable slider that will activate a callback when the user slides it to 100%.
 
-## Code scaffolding
+![SlideToConfirm](https://github.com/rinturaj/NgxSlideToConfirm/blob/main/projects/slide-to-confirm/example.gif)
 
-Run `ng generate component component-name --project SlideToConfirm` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module --project SlideToConfirm`.
-> Note: Don't forget to add `--project SlideToConfirm` or else it will be added to the default project in your `angular.json` file. 
 
+## Installation
+
+```bash
+npm install ngx-slide-to-confirm --save
+```
+
+## Usage
+Import the module:
+
+```typescript
+import {  SlideToConfirmModule } from 'ngx-slide-to-confirm';
+
+@NgModule({
+  
+    imports: [ SlideToConfirmModule],
+
+  
+})
+export class AppModule {
+}
+```
+```html
+
+  <ngx-slide-to-confirm placeHolder="Slide to confirm" (confirm)="onConfirm()"></ngx-slide-to-confirm>
+
+```
+
+
+
+## Contributing
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+
+## License
+[MIT](https://choosealicense.com/licenses/mit/)
 ## Build
 
 Run `ng build SlideToConfirm` to build the project. The build artifacts will be stored in the `dist/` directory.
@@ -19,6 +51,4 @@ After building your library with `ng build SlideToConfirm`, go to the dist folde
 
 Run `ng test SlideToConfirm` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-## Further help
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
