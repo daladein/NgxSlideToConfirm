@@ -13,5 +13,10 @@
   "dependencies": {
     "@angular/cdk": "^13.2.0",
     "tslib": "^2.0.0"
-  }
+  },
+  "private": false,
+  "keywords": ["slide-to-confirm", "angular",
+    "slide-to-confirm",
+    "ngx-slide-to-confirm",
+    "ngx-confirm"]
 }
