@@ -1,1 +1,36 @@
-Htmls
+<div id="slide-to-confirm-wrapper" class="slide-to-confirm-wrapper"
+  [style.background]="'linear-gradient(90deg, rgb(24, 201, 98) '+percentageSuccess+'%, '+color+' '+percentage+'%)'">
+  <div class="slide-to-hint-text">
+
+    <span *ngIf="!isConfirmed"  [style.opacity]='opacity'>{{ placeHolder }} </span>
+    <span  *ngIf="isConfirmed" >{{ successText }} </span>
+  </div>
+
+  <div class="slide-to-confirm-boundry-wrapper">
+    <ng-container cdkDropListGroup>
+      <!-- Drag Source -->
+      <div class="slide-to-confirm-source" cdkDropList (cdkDropListDropped)="drop($event)">
+
+        <!-- Drag Handle -->
+        <div class="slide-to-confirm-handle" cdkDrag cdkDragLockAxis="x" (cdkDragMoved)='handleMove($event)'
+          cdkDragBoundary=".slide-to-confirm-boundry-wrapper" *ngIf='!isConfirmed'>
+          <span class='slide-to-icon'>&#10095;</span>
+          <!-- <div *cdkDragPreview >
+                    <h1> Confirmed</h1>
+                  </div> -->
+        </div>
+
+      </div>
+
+      <div class="spacer"></div>
+
+      <!-- Drag Target -->
+      <div class="slide-to-confirm-target" cdkDropList (cdkDropListDropped)="drop($event)">
+        <!-- Drag Handle -->
+        <div class="slide-to-confirm-handle" *ngIf='isConfirmed'>
+          <span class='slide-to-icon'>{{'✓'}}</span>
+        </div>
+      </div>
+    </ng-container>
+  </div>
+</div>
