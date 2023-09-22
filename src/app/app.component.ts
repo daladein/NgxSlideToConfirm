@@ -7,4 +7,12 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'NgxSlideToConfirm';
+
+  onConfirmed() {
+    console.log('✅ confirmed');
+  }
+
+  onReset() {
+    console.log('❌ reset');
+  }
 }

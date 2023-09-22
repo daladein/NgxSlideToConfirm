@@ -28,7 +28,7 @@ export class AppModule {
 ```
 ```html
 
-  <ngx-slide-to-confirm placeHolder="Slide to confirm" (confirm)="onConfirm()"></ngx-slide-to-confirm>
+  <ngx-slide-to-confirm placeHolder="Slide to confirm" (confirmEvent)="onConfirm()"></ngx-slide-to-confirm>
 
 ```
 

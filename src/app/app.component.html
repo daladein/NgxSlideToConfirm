@@ -1,2 +1,8 @@
 
-<ngx-slide-to-confirm></ngx-slide-to-confirm>
+<ngx-slide-to-confirm
+  [color]="'yellowgreen'"
+  [backgroundColor]="'#034013'"
+  [reset]="true"
+  (confirmEvent)="onConfirmed()"
+  (resetEvent)="onReset()"
+></ngx-slide-to-confirm>
